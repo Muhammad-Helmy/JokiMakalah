@@ -1,7 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Slider from "@/components/carousel/page";
 import Main from "@/components/main/page";
 import Navbar from "@/components/navbar/page";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
