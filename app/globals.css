@@ -25,3 +25,12 @@ body {
     text-wrap: balance;
   }
 }
+
+
+div {
+  font-family: var(--font-montserrat);
+}
+ 
+h1 {
+  font-family: var(--font-spartan);
+}
