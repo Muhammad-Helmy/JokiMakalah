@@ -5,12 +5,12 @@ import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay'; // Import the autoplay style
 
 import './style.css';
 
-
-// import required modules
-import { Pagination } from 'swiper/modules';
+// Import required modules
+import { Pagination, Autoplay } from 'swiper/modules';
 
 export default function Carousel() {
   return (
@@ -20,7 +20,11 @@ export default function Carousel() {
         centeredSlides={true}
         spaceBetween={30}
         loop={true}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]} // Include Autoplay module
+        autoplay={{
+          delay: 5000, // Slide every 5 seconds
+          disableOnInteraction: false, // Keep autoplay after user interaction
+        }}
         className="mySwiper mt-4 bg-white h-72"
       >
         <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>

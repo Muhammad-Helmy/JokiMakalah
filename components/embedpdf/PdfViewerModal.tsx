@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Worker, Viewer } from '@react-pdf-viewer/core';  // Import PDF.js components
+import '@react-pdf-viewer/core/lib/styles/index.css';    // Import CSS untuk PDF viewer
 
 interface PDFViewerModalProps {
   pdfSrc: string;       // Lokasi atau URL dari PDF
@@ -6,15 +8,12 @@ interface PDFViewerModalProps {
 }
 
 const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc }) => {
-  // State untuk menampilkan atau menyembunyikan modal
   const [showPDF, setShowPDF] = useState(false);
 
-  // Fungsi untuk menampilkan modal PDF
   const handleShowPDF = () => {
     setShowPDF(true);
   };
 
-  // Fungsi untuk menutup modal PDF
   const handleClosePDF = () => {
     setShowPDF(false);
   };
@@ -24,7 +23,7 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
       {/* Thumbnail PDF */}
       <div className="relative w-full h-full cursor-pointer" onClick={handleShowPDF}>
         <img
-          src={thumbnailSrc}  // Menggunakan props thumbnailSrc
+          src={thumbnailSrc}
           alt="Halaman Pertama Makalah"
           className="w-full h-full object-cover"
         />
@@ -37,13 +36,9 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
       {showPDF && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-50" onClick={handleClosePDF}>
           <div className="relative w-[80%] h-[90%] bg-white shadow-lg rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}>
-            <iframe
-              src={pdfSrc}  // Menggunakan props pdfSrc
-              width="100%"
-              height="100%"
-              title="PDF Viewer"
-              frameBorder="0"
-            ></iframe>
+            <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
+              <Viewer fileUrl={pdfSrc} /> {/* PDF.js untuk menampilkan PDF */}
+            </Worker>
             <button className="absolute top-4 right-4 text-white bg-red-500 px-3 py-2 rounded" onClick={handleClosePDF}>
               Close
             </button>
