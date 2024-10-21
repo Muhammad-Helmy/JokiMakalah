@@ -23,11 +23,11 @@ export default function Carousel() {
         modules={[Pagination]}
         className="mySwiper mt-4 bg-white h-72"
       >
-        <SwiperSlide><Image className="rounded-md" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
-        <SwiperSlide><Image className="rounded-md" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
-        <SwiperSlide><Image className="rounded-md" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
-        <SwiperSlide><Image className="rounded-md" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
-        <SwiperSlide><Image className="rounded-md" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
+        <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
+        <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
+        <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
+        <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
+        <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={500} height={400} /></SwiperSlide>
       </Swiper>
     </>
   );
