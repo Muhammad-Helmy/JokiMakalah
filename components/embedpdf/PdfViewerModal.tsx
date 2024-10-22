@@ -19,7 +19,7 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
   };
 
   return (
-    <div className="w-full sm:w-[24rem] md:w-[30rem] lg:w-[34rem] h-[24rem] sm:h-[34rem] md:h-[40rem] lg:h-[44rem] bg-white shadow-black rounded-lg shadow-md overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
+    <div className="w-full sm:w-[24rem] md:w-[30rem] lg:w-[34rem] h-[24rem] sm:h-[34rem] md:h-[40rem] lg:h-[44rem] bg-white rounded-lg shadow-md border overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
       {/* Thumbnail PDF */}
       <div className="relative w-full h-full cursor-pointer" onClick={handleShowPDF}>
         <img
@@ -27,15 +27,14 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
           alt="Halaman Pertama Makalah"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <p className="text-white font-bold text-sm sm:text-lg lg:text-xl">Klik untuk Baca PDF</p> {/* Ukuran teks responsif */}
+        <div className="absolute inset-0 flex justify-center items-center">
         </div>
       </div>
 
       {/* Modal PDF Viewer */}
       {showPDF && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-50" onClick={handleClosePDF}>
-          <div className="relative w-[90%] h-[80%] md:w-[80%] md:h-[90%] lg:w-[60%] lg:h-[80%] bg-white shadow-lg rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}> {/* Ukuran modal responsif */}
+          <div className="relative w-[90%] h-[80%] md:w-[80%] md:h-[90%] lg:w-[60%] lg:h-[80%] bg-white rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}> {/* Ukuran modal responsif */}
             <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
               <Viewer fileUrl={pdfSrc} /> {/* PDF.js untuk menampilkan PDF */}
             </Worker>

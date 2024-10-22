@@ -10,14 +10,14 @@ const MainPage = () => {
           Dengan <b>JokiMakalah</b>, Anda bisa menyerahkan tugas dan makalah Anda kepada kami, 
           sehingga Anda bisa fokus sepenuhnya pada hal-hal penting lainnya tanpa perlu khawatir!
         </p>
-        <p className="mt-2  md:text-base lg:text-lg">
+        <p className="mt-2 md:text-base lg:text-lg">
           Dengan <b>JokiMakalah</b>, Anda bisa menyerahkan tugas dan makalah Anda kepada kami.
         </p>
        
       </div>
 
       <div className="mt-5 md:grid md:grid-cols-3 gap-5">
-        <div className="bg-gray-200 rounded-xl py-10 px-10  items-center">
+        <div className="bg-gray-200 md:my-10 rounded-xl py-10 px-10  items-center">
           <div className="flex justify-center items-center">
           <Image className="object-contain" src="/makalah.png" alt="Logo" width={100} height={100} />
           </div>

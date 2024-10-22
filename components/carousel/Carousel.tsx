@@ -25,7 +25,7 @@ export default function Carousel() {
           delay: 5000, // Slide every 5 seconds
           disableOnInteraction: false, // Keep autoplay after user interaction
         }}
-        className="mySwiper mt-5 md:mt-24 bg-white h-96 "
+        className="mySwiper mt-5 bg-white h-96 "
       >
         <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={1000} height={400} /></SwiperSlide>
         <SwiperSlide><Image className="rounded-xl" src="/banner1.png" alt="Logo" width={1000} height={400} /></SwiperSlide>

@@ -16,9 +16,10 @@ const Navigation = () => {
   return (
     <div className="bg-white text-black">
       {/* Navbar untuk Desktop */}
-      <div className="md:flex items-center justify-between p-4 md:w-full top-0 sticky z-50 hidden">
+      <div className="md:flex bg-white items-center justify-between p-4 md:w-full top-0 sticky z-50 hidden">
         {/* Image di awal (start) */}
         <div className="w-12 h-12 md:w-20 md:h-12 lg:w-32 lg:h-14 md:flex ">
+          <a href="/">
           <Image
             src="/JokiMakalah.png"
             alt="My image"
@@ -26,6 +27,7 @@ const Navigation = () => {
             width={120}
             height={120}
           />
+          </a>
         </div>
 
         {/* Navigasi di akhir (end) */}

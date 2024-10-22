@@ -23,13 +23,19 @@ const Makalah: React.FC = () => {
 
           <PDFViewerModal
             pdfSrc="/TugasGeografi.pdf"
-            thumbnailSrc="/path-to-thumbnail2.jpg"
+            thumbnailSrc="/Mkons.png"
           />
 
           {/* Tambahkan PDFViewerModal lagi jika perlu */}
           <PDFViewerModal
             pdfSrc="/ThirdArticle.pdf"
-            thumbnailSrc="/path-to-thumbnail3.jpg"
+            thumbnailSrc="/MKons.png"
+          />
+
+          {/* Tambahkan PDFViewerModal lagi jika perlu */}
+          <PDFViewerModal
+            pdfSrc="/MakalahKonstitusi.pdf"
+            thumbnailSrc="/MKons.png"
           />
 
         </div>
