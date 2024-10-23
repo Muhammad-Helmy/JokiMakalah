@@ -79,11 +79,20 @@ const Navigation = () => {
             layout=""
             width={80}
             height={48}
+            className="block dark:hidden"
+          />
+          <Image
+            src="/JokiMakalahWhite.png"
+            alt="My image"
+            layout=""
+            width={80}
+            height={48}
+            className="hidden dark:block"
           />
         </div>
 
         {/* Tombol untuk toggle sidebar */}
-        <button onClick={toggleSidebar} className="text-black">
+        <button onClick={toggleSidebar} className="text-black dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -111,21 +120,30 @@ const Navigation = () => {
 
       {/* Sidebar di sebelah kanan */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-md z-40 transform ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-md z-40 transform dark:bg-black ${
           sidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        <div className="flex justify-between items-center p-4 border-b">
+        <div className="flex justify-between items-center p-4 border-b dark:border-gray-900">
           {/* Logo di Sidebar */}
           <div className="w-20 h-12">
-            <Image
-              src="/JokiMakalah.png"
-              alt="My image"
-              layout=""
-              width={80}
-              height={48}
-            />
-          </div>
+          <Image
+            src="/JokiMakalah.png"
+            alt="My image"
+            layout=""
+            width={80}
+            height={48}
+            className="block dark:hidden"
+          />
+          <Image
+            src="/JokiMakalahWhite.png"
+            alt="My image"
+            layout=""
+            width={80}
+            height={48}
+            className="hidden dark:block"
+          />
+        </div>
 
           {/* Tombol Close Sidebar */}
           <button onClick={toggleSidebar} className="hover:bg-gray-300 hover:rounded-full">
