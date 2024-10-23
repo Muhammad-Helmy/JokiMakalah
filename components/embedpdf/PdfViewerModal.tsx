@@ -20,9 +20,9 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc, t
   };
 
   return (
-    <div className="w-full sm:w-[24rem] md:w-96 lg:w-[40rem] h-[24rem] sm:h-[14rem] md:h-[27rem] lg:h-[44rem] bg-white rounded-lg shadow-md border  overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
+    <div className="w-full sm:w-80 md:w-96 lg:w-[32rem] xl:w-[40rem] h-[24rem] sm:h-96 md:h-[27rem] lg:h-[38rem] xl:h-[44rem] bg-white rounded-lg shadow-md border  overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
       {/* Thumbnail PDF */}
-      <div className="relative w-full cursor-pointer sm:w-[24rem] md:w-96 lg:w-[40rem] h-[22rem] sm:h-[14rem] md:h-96 lg:h-[40rem]" onClick={handleShowPDF}>
+      <div className="relative w-full cursor-pointer sm:w-80 md:w-96 lg:w-[32rem] xl:w-[40rem] h-[22rem] sm:h-[22rem] md:h-96 lg:h-[34rem] xl:h-[40rem]" onClick={handleShowPDF}>
         <img
           src={thumbnailSrc}
           alt="Halaman Pertama Makalah"

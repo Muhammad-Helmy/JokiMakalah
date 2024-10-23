@@ -9,7 +9,7 @@ const Makalah: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main className="px-4 sm:px-8 md:px-2 lg:px-28"> {/* Mengubah padding untuk responsivitas */}
+      <main className="px-4 sm:px-8 md:px-2 xl:px-28"> {/* Mengubah padding untuk responsivitas */}
         <div className="">
           <h1 className="text-2xl sm:text-3xl font-bold text-center mt-5 sm:mt-10">PEMBUATAN MAKALAH</h1> {/* Ubah ukuran teks dan margin untuk mobile */}
           <p className="text-lg sm:text-xl flex justify-center items-center font-semibold">Kumpulan Makalah Kita</p> {/* Ubah ukuran teks untuk mobile */}
