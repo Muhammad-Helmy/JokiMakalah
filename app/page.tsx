@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar/page";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black">
       <Navbar/>
       <main>
         <Slider/>

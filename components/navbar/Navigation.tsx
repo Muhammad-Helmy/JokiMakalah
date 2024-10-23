@@ -14,11 +14,11 @@ const Navigation = () => {
   };
 
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white dark:bg-black dark:text-white text-black">
       {/* Navbar untuk Desktop */}
-      <div className="md:flex bg-white items-center justify-between p-4 md:w-full top-0 sticky z-50 hidden">
+      <div className="md:flex bg-white dark:bg-black items-center justify-between p-4 md:w-full top-0 sticky z-50 hidden">
         {/* Image di awal (start) */}
-        <div className="w-12 h-12 md:w-20 md:h-12 lg:w-32 lg:h-14 md:flex ">
+        <div className="w-12 h-12 md:w-20 md:h-12 lg:w-32 lg:h-16 md:flex ">
           <a href="/">
           <Image
             src="/JokiMakalah.png"
@@ -26,6 +26,15 @@ const Navigation = () => {
             layout=""
             width={120}
             height={120}
+            className="block dark:hidden"
+          />
+          <Image
+            src="/JokiMakalahWhite.png"
+            alt="My image"
+            layout=""
+            width={120}
+            height={120}
+            className="hidden dark:block"
           />
           </a>
         </div>
