@@ -5,9 +5,10 @@ import '@react-pdf-viewer/core/lib/styles/index.css';    // Import CSS untuk PDF
 interface PDFViewerModalProps {
   pdfSrc: string;       // Lokasi atau URL dari PDF
   thumbnailSrc: string; // Lokasi atau URL dari thumbnail PDF
+  textPdf: string; //text nama
 }
 
-const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc }) => {
+const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc, textPdf }) => {
   const [showPDF, setShowPDF] = useState(false);
 
   const handleShowPDF = () => {
@@ -19,16 +20,15 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
   };
 
   return (
-    <div className="w-full sm:w-[24rem] md:w-[30rem] lg:w-[34rem] h-[24rem] sm:h-[34rem] md:h-[40rem] lg:h-[44rem] bg-white rounded-lg shadow-md border overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
+    <div className="w-full sm:w-[24rem] md:w-96 lg:w-[40rem] h-[24rem] sm:h-[14rem] md:h-[27rem] lg:h-[44rem] bg-white rounded-lg shadow-md border  overflow-hidden"> {/* Responsif untuk berbagai ukuran layar */}
       {/* Thumbnail PDF */}
-      <div className="relative w-full h-full cursor-pointer" onClick={handleShowPDF}>
+      <div className="relative w-full cursor-pointer sm:w-[24rem] md:w-96 lg:w-[40rem] h-[22rem] sm:h-[14rem] md:h-96 lg:h-[40rem]" onClick={handleShowPDF}>
         <img
           src={thumbnailSrc}
           alt="Halaman Pertama Makalah"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover border-b"
         />
-        <div className="absolute inset-0 flex justify-center items-center">
-        </div>
+        <p className="items-center justify-center text-center text-base dark:text-white font-semibold p-1 md:p-5">{textPdf}</p>
       </div>
 
       {/* Modal PDF Viewer */}
@@ -38,8 +38,8 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc })
             <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
               <Viewer fileUrl={pdfSrc} /> {/* PDF.js untuk menampilkan PDF */}
             </Worker>
-            <button className="absolute top-4 right-4 text-white bg-red-500 px-3 py-2 rounded" onClick={handleClosePDF}>
-              Close
+            <button className="absolute top-4 right-4 selection:bg-gray-200  font-semibold text-black px-3 py-1 rounded-full" onClick={handleClosePDF}>
+              X
             </button>
           </div>
         </div>

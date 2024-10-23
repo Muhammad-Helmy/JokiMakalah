@@ -31,7 +31,7 @@ const Navigation = () => {
         </div>
 
         {/* Navigasi di akhir (end) */}
-        <ul className="flex gap-14">
+        <ul className="flex gap-14 md:gap-10 lg:gap-14 ">
           <li>
             <a className="hover:text-gray-500 font-bold" href="/">
               HOME
