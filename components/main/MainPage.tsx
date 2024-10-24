@@ -81,7 +81,7 @@ const MainPage = () => {
           <div className="hidden md:block">
             <p> &nbsp;</p>
             <p className="flex justify-start ml-10 text-xl font-medium">Contact</p>
-            <p className="mt-2 text-white md:text-sm lg:text-base xl:flex hidden">
+            <p className="mt-1 text-start ml-10 text-xs text-white md:text-sm xl:flex hidden">
               Butuh bantuan tugas, makalah, atau copywriting? Jokimakalah siap membantu! Layanan terpercaya dan cepat, hasil berkualitas dan tepat waktu. Hemat waktu, biar kami yang kerjakan!
             </p>
             <p className="mt-2 ml-10 text-start text-white text-xs xl:text-base block xl:hidden">
