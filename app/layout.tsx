@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { League_Spartan, Montserrat } from 'next/font/google'
+import { League_Spartan, Montserrat, Poppins } from 'next/font/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,10 +24,17 @@ const spartan = League_Spartan({
   variable: '--font-spartan',
   display: 'swap',
 })
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // Added weight specification
+})
  
 const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-montserrat  ',
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -37,12 +44,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spartan.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${spartan.variable} ${montserrat.variable} ${poppins.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
         {children}
-      </body>
+      </body> 
     </html>
   );
 }

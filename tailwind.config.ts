@@ -11,9 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        skymain: "#5271ff",
+        skydark: "#3e5ce4",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
