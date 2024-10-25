@@ -26,9 +26,9 @@ const PDFViewerModal: React.FC<PDFViewerModalProps> = ({ pdfSrc, thumbnailSrc, t
         <img
           src={thumbnailSrc}
           alt="Halaman Pertama Makalah"
-          className="w-full h-full object-cover border-b "
+          className="w-full h-full object-cover border-b border-gray-300 dark:border-gray-600"
         />
-        <p className="items-center justify-center text-center text-base dark:text-white dark:bg-black  font-semibold p-1 md:p-5">{textPdf}</p>
+        <p className="items-center justify-center text-center text-base bg-gray-100 dark:bg-gray-700 font-semibold p-1 md:p-3 lg:p-5">{textPdf}</p>
       </div>
 
       {/* Modal PDF Viewer */}
