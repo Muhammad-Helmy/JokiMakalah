@@ -19,7 +19,7 @@ const Makalah: React.FC = () => {
           <div>
           {/* Menggunakan komponen PDFViewerModal dengan props */}
           <PDFViewerModal
-            pdfSrc="/pdf/makalah/MakalahKesultanan.pdf"
+            pdfSrc="/MakalahKesultanan.pdf"
             thumbnailSrc="/Demak.png"
             textPdf="Kesultanan Demak"
           />
@@ -27,7 +27,7 @@ const Makalah: React.FC = () => {
 
           <div>
           <PDFViewerModal
-            pdfSrc="/pdf/makalah/MakalahMonkasel.pdf"
+            pdfSrc="/MakalahMonkasel.pdf"
             thumbnailSrc="/Submarine.png"
             textPdf="Monumen Kapal Selam"
           />
@@ -36,7 +36,7 @@ const Makalah: React.FC = () => {
           <div>
           {/* Tambahkan PDFViewerModal lagi jika perlu */}
           <PDFViewerModal
-            pdfSrc="/pdf/makalah/MakalahBudidaya.pdf"
+            pdfSrc="/MakalahBudidaya.pdf"
             thumbnailSrc="/Budidaya.png"
             textPdf="Budidaya Ikan"
           />
@@ -45,7 +45,7 @@ const Makalah: React.FC = () => {
           <div className="">
           {/* Tambahkan PDFViewerModal lagi jika perlu */}
           <PDFViewerModal
-            pdfSrc="/pdf/makalah/MakalahKonstitusi.pdf"
+            pdfSrc="/MakalahKonstitusi.pdf"
             thumbnailSrc="/Konstitusi.png"
             textPdf="Makalah Konstitusi"
           />
