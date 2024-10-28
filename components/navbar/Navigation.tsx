@@ -62,8 +62,8 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-            <a className="hover:text-gray-500 font-bold mr-16" href="/content/contact">
-              CONTACT
+            <a className="hover:text-gray-500 font-bold mr-16" href="/content/order">
+              ORDER NOW
             </a>
           </li>
         </ul>
@@ -187,8 +187,8 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-            <a className="hover:text-gray-500 font-bold" href="/content/contact">
-              CONTACT
+            <a className="hover:text-gray-500 font-bold" href="/content/order">
+              ORDER NOW
             </a>
           </li>
         </ul>
