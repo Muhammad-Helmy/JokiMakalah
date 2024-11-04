@@ -16,9 +16,9 @@ const Tugasku: React.FC = () => {
           <div>
           {/* Menggunakan komponen PDFViewerModal dengan props */}
           <PDFViewerModal
-            pdfSrc="/MakalahKesultanan.pdf"
-            thumbnailSrc="/Demak.png"
-            textPdf="Kesultanan Demak"
+            pdfSrc="/TugasTransportasi.pdf"
+            thumbnailSrc="/transportasi.png"
+            textPdf="Transportasi"
           />
           </div>
 
