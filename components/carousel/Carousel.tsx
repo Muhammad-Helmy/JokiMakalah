@@ -17,10 +17,12 @@ export default function Carousel() {
   // Media query checks
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
-  // Set the image source based on the device type
-  const imageSrc = isMobile ? '/bannermobile.png' : '/banner1.png';
-  const imageWidth = isMobile ? 400 : 1000;
-  const imageHeight = isMobile ? 200 : 400;
+  // Image sources for mobile and desktop
+  const images = [
+    { mobile: '/banner1mobile.png', desktop: '/banner1.png' },
+    { mobile: '/banner2mobile.png', desktop: '/banner2.png' },
+    { mobile: '/banner3mobile.png', desktop: '/banner3.png' },
+  ];
 
   return (
     <>
@@ -37,17 +39,23 @@ export default function Carousel() {
           }}
           className="h-[22rem] md:h-96"
         >
-          {[1, 2, 3, 4, 5].map((_, index) => (
-            <SwiperSlide key={index} className="bg-white dark:bg-black rounded-xl">
-              <Image
-                className="rounded-xl"
-                src={imageSrc}
-                alt="Carousel Image"
-                width={imageWidth}
-                height={imageHeight}
-              />
-            </SwiperSlide>
-          ))}
+          {images.map((image, index) => {
+            const imageSrc = isMobile ? image.mobile : image.desktop;
+            const imageWidth = isMobile ? 400 : 1000;
+            const imageHeight = isMobile ? 200 : 400;
+
+            return (
+              <SwiperSlide key={index} className="bg-white dark:bg-black rounded-xl">
+                <Image
+                  className="rounded-xl"
+                  src={imageSrc}
+                  alt={`Carousel Image ${index + 1}`}
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </>
