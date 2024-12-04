@@ -90,7 +90,7 @@ const MainPage = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <a href="https://wa.me/+6285648652583" className="flex justify-center items-center text-center mt-8 md:mt-0">
+            <a href="https://wa.me/6285648652583?text=Halo%20kak,%20saya%20mau%20order%20nih" className="flex justify-center items-center text-center mt-8 md:mt-0">
               <div className="h-12 w-60 bg-white rounded-md justify-center items-center flex">
                 <p className="text-xs"> &nbsp;</p>
                 <div className="text-center items-center flex justify-center">

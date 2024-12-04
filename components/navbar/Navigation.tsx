@@ -61,11 +61,11 @@ const Navigation = () => {
               COPYWRITING
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="hover:text-gray-500 font-bold mr-16" href="/content/order">
               ORDER NOW
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
@@ -186,11 +186,11 @@ const Navigation = () => {
               COPYWRITING
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="hover:text-gray-500 font-bold" href="/content/order">
               ORDER NOW
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
