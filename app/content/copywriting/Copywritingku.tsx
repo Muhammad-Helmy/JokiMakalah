@@ -16,36 +16,36 @@ const Copywritingku: React.FC = () => {
           <div>
           {/* Menggunakan komponen PDFViewerModal dengan props */}
           <PDFViewerModal
-            pdfSrc="/MakalahKesultanan.pdf"
-            thumbnailSrc="/Demak.png"
-            textPdf="Kesultanan Demak"
+            pdfSrc="/CopywritingScriptHowToMakeIndomie.pdf"
+            thumbnailSrc="/HowToMake.png"
+            textPdf="How To Make"
           />
           </div>
 
           <div>
           <PDFViewerModal
-            pdfSrc="/MakalahMonkasel.pdf"
-            thumbnailSrc="/Submarine.png"
-            textPdf="Monumen Kapal Selam"
+            pdfSrc="/CopywritingDrama.pdf"
+            thumbnailSrc="/Drama.png"
+            textPdf="NaskahDrama"
           />
           </div>
 
           <div>
-          {/* Tambahkan PDFViewerModal lagi jika perlu */}
+          {/* Tambahkan PDFViewerModal lagi jika perlu
           <PDFViewerModal
             pdfSrc="/MakalahBudidaya.pdf"
             thumbnailSrc="/Budidaya.png"
             textPdf="Budidaya Ikan"
-          />
+          /> */}
           </div>
 
           <div className="">
-          {/* Tambahkan PDFViewerModal lagi jika perlu */}
+          {/* Tambahkan PDFViewerModal lagi jika perlu
           <PDFViewerModal
             pdfSrc="/MakalahKonstitusi.pdf"
             thumbnailSrc="/Konstitusi.png"
             textPdf="Makalah Konstitusi"
-          />
+          /> */}
           </div>
 
         </div>

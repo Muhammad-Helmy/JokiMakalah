@@ -24,27 +24,27 @@ const Tugasku: React.FC = () => {
 
           <div>
           <PDFViewerModal
-            pdfSrc="/MakalahMonkasel.pdf"
-            thumbnailSrc="/Submarine.png"
-            textPdf="Monumen Kapal Selam"
+            pdfSrc="/TugasInfografis.pdf"
+            thumbnailSrc="/Infografis.png"
+            textPdf="Infografis"
           />
           </div>
 
           <div>
           {/* Tambahkan PDFViewerModal lagi jika perlu */}
           <PDFViewerModal
-            pdfSrc="/MakalahBudidaya.pdf"
-            thumbnailSrc="/Budidaya.png"
-            textPdf="Budidaya Ikan"
+            pdfSrc="/TugasGeografi.pdf"
+            thumbnailSrc="/Geografi.png"
+            textPdf="Geografi"
           />
           </div>
 
           <div className="">
           {/* Tambahkan PDFViewerModal lagi jika perlu */}
           <PDFViewerModal
-            pdfSrc="/MakalahKonstitusi.pdf"
-            thumbnailSrc="/Konstitusi.png"
-            textPdf="Makalah Konstitusi"
+            pdfSrc="/TugasArtikle.pdf"
+            thumbnailSrc="/Keberagaman.png"
+            textPdf="Keberagaman"
           />
           </div>
 
